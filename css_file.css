@@ -1,0 +1,155 @@
+* {
+  margin: 0rem;
+  padding: 0rem;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  color: #111;
+  background-color: #fff;
+}
+
+.header-container {
+  position: fixed;
+  top: 0rem;
+  right: 0rem;
+  left: 0rem;
+  z-index: 4;
+  display: grid;
+  grid-template-areas:
+    "logo navigation navigation navigation navigation "
+    "logo ecommerceHeader ecommerceHeader ecommerceHeader ecommerceHeader";
+  column-gap: 2rem;
+  padding: 1rem 3rem;
+  background-color: white;
+}
+
+.logo-icon {
+  padding-top: 0.5rem;
+  grid-area: logo;
+  margin: 0rem;
+}
+
+.ecommerce-header,
+.nav-link {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.nav-link {
+  grid-area: navigation;
+}
+
+.nav-link ul {
+  display: flex;
+  list-style: none;
+}
+a {
+  color: #111;
+}
+.nav-link ul li {
+  margin: 0rem 1rem;
+}
+.nav-link ul li a {
+  text-decoration: none;
+}
+ul hr {
+  width: 0.1rem;
+  height: 1rem;
+  border: none;
+  background-color: #a7a7a7;
+  margin: 0rem;
+}
+.shopping-basket {
+  margin: 0rem 1rem 0rem 2rem;
+}
+
+.ecommerce-header {
+  grid-area: ecommerceHeader;
+}
+
+.ecommerce-header ul {
+  display: flex;
+  list-style: none;
+}
+.ecommerce-header ul li:not(li:first-of-type) {
+  margin-left: 1.5rem;
+}
+
+.ecommerce-header ul li a {
+  text-decoration: none;
+}
+
+div.search {
+  position: relative;
+  height: 2rem;
+  margin-left: 3rem;
+}
+
+input[type="search"] {
+  width: 15rem;
+  height: inherit;
+  padding-left: 2rem;
+  background-color: #eee;
+  border: none;
+  border-radius: 2rem;
+}
+
+div.search img {
+  position: absolute;
+  top: 0.3rem;
+}
+
+div.main-container {
+  margin-top: 8rem;
+  margin-bottom: 2rem;
+  padding: 13rem 10rem;
+  width: 100%;
+  height: 40rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.main-container-text {
+  width: 25rem;
+}
+
+.main-container-text h1,
+.main-container-text h3,
+.main-container-text p {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: white;
+}
+
+.main-container-text h1 {
+  font-family: "Merienda", cursive;
+  font-size: 3.5rem;
+}
+
+.main-container-text h3 {
+  font-size: x-large;
+  font-weight: lighter;
+  margin-top: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.main-container-text p {
+  line-height: 1.2rem;
+  font-size: small;
+  font-weight: lighter;
+}
+
+.main-container-image {
+  width: 100%;
+  height: auto;
+  display: flex;
+  color: #464646;
+}
+
+.change-boxshadow {
+  box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em,
+    rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+}
